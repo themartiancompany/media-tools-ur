@@ -57,7 +57,7 @@ _url="${url}"
     "${pkgname}-${pkgver}.tar.gz::${_url}/archive/refs/tags/${pkgver}.tar.gz"
   ) && \
   sha256sums+=(
-    'b37c148a682dd38ba85db29e3dc4c2f06b7554b3ef91f53f973e7a8e780433b8'
+    '0b69f3e620beb0925eabff7739593285fbe1e4527d98467464154031cae66ab6'
   )
 
 check() {

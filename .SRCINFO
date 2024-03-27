@@ -8,6 +8,6 @@ pkgbase = media-tools
 	checkdepends = shellcheck
 	depends = ffmpeg
 	source = media-tools-0.0.0.1.1.1.tar.gz::https://github.com/themartiancompany/media-tools/archive/refs/tags/0.0.0.1.1.1.tar.gz
-	sha256sums = b37c148a682dd38ba85db29e3dc4c2f06b7554b3ef91f53f973e7a8e780433b8
+	sha256sums = 0b69f3e620beb0925eabff7739593285fbe1e4527d98467464154031cae66ab6
 
 pkgname = media-tools
