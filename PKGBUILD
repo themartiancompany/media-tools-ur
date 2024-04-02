@@ -62,7 +62,7 @@ _url="${url}"
 
 check() {
   cd \
-    "${pkgname}i-${pkgver}"
+    "${pkgname}-${pkgver}"
   make \
     -k \
     check
