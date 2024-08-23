@@ -1,6 +1,6 @@
 pkgbase = media-tools
 	pkgdesc = A collection of media manipulation scripts.
-	pkgver = 0.0.0.1.1.1
+	pkgver = 0.0.0.1.1.1.1
 	pkgrel = 1
 	url = https://github.com/themartiancompany/media-tools
 	arch = any
@@ -8,7 +8,7 @@ pkgbase = media-tools
 	checkdepends = shellcheck
 	depends = ffmpeg
 	depends = libcrash-bash
-	source = media-tools-0.0.0.1.1.1.tar.gz::https://github.com/themartiancompany/media-tools/archive/refs/tags/0.0.0.1.1.1.tar.gz
-	sha256sums = 0b69f3e620beb0925eabff7739593285fbe1e4527d98467464154031cae66ab6
+	source = media-tools-111cfe24d6b6b1d7fc0cef32504e8c517a9e481a.zip::https://github.com/themartiancompany/media-tools/archive/111cfe24d6b6b1d7fc0cef32504e8c517a9e481a.zip
+	sha256sums = 6a143f8db86343dfdbac33b94a7c43f8039257842c7d9ea84878d9918ce6c99b
 
 pkgname = media-tools

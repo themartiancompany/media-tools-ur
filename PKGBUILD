@@ -6,7 +6,8 @@
 _offline="false"
 _git="false"
 pkgname=media-tools
-pkgver=0.0.0.1.1.1
+pkgver=0.0.0.1.1.1.1
+_commit="111cfe24d6b6b1d7fc0cef32504e8c517a9e481a"
 pkgrel=1
 _pkgdesc=(
   "A collection of media manipulation scripts."
@@ -41,29 +42,39 @@ checkdepends=(
 source=()
 sha256sums=()
 _url="${url}"
+_tag="${_commit}"
+_tag_name="commit"
+_tarname="${pkgname}-${_tag}"
 [[ "${_offline}" == "true" ]] && \
-  url="file://${HOME}/${_pkgname}"
+  url="file://${HOME}/${pkgname}"
 [[ "${_git}" == true ]] && \
   makedepends+=(
     "git"
   ) && \
   source+=(
-    "${pkgname}-${pkgver}::git+${_url}#tag=${pkgver}"
+    "${_tarname}::git+${_url}#${_tag_name}=${_tag}"
   ) && \
   sha256sums+=(
     SKIP
   )
 [[ "${_git}" == false ]] && \
-  source+=(
-    "${pkgname}-${pkgver}.tar.gz::${_url}/archive/refs/tags/${pkgver}.tar.gz"
-  ) && \
-  sha256sums+=(
-    '0b69f3e620beb0925eabff7739593285fbe1e4527d98467464154031cae66ab6'
-  )
+  if [[ "${_tag_name}" == 'pkgver' ]]; then
+    _tar="${_tarname}.tar.gz::${_url}/archive/refs/tags/${_tag}.tar.gz"
+    _sum='b245547bdcdbfeb09f400305a4b515b6d49635be90f560a39302761fc2688571'
+  elif [[ "${_tag_name}" == "commit" ]]; then
+    _tar="${_tarname}.zip::${_url}/archive/${_commit}.zip"
+    _sum="6a143f8db86343dfdbac33b94a7c43f8039257842c7d9ea84878d9918ce6c99b"
+  fi && \
+    source+=(
+      "${_tar}"
+    ) && \
+    sha256sums+=(
+      "${_sum}"
+    )
 
 check() {
   cd \
-    "${pkgname}-${pkgver}"
+    "${_tarname}"
   make \
     -k \
     check
@@ -71,7 +82,7 @@ check() {
 
 package() {
   cd \
-    "${pkgname}-${pkgver}"
+    "${_tarname}"
   make \
     PREFIX="/usr" \
     DESTDIR="${pkgdir}" \
