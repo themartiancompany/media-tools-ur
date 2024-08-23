@@ -23,6 +23,7 @@ license=(
 )
 depends=(
   "ffmpeg"
+  "libcrash-bash"
 )
 _os="$( \
   uname \

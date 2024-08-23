@@ -7,6 +7,7 @@ pkgbase = media-tools
 	license = AGPL3
 	checkdepends = shellcheck
 	depends = ffmpeg
+	depends = libcrash-bash
 	source = media-tools-0.0.0.1.1.1.tar.gz::https://github.com/themartiancompany/media-tools/archive/refs/tags/0.0.0.1.1.1.tar.gz
 	sha256sums = 0b69f3e620beb0925eabff7739593285fbe1e4527d98467464154031cae66ab6
 
