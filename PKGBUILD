@@ -6,8 +6,8 @@
 _offline="false"
 _git="false"
 pkgname=media-tools
-pkgver=0.0.0.1.1.1.1
-_commit="111cfe24d6b6b1d7fc0cef32504e8c517a9e481a"
+pkgver=0.0.0.1.1.1.1.1.1
+_commit="fdcc9332e6f90e032c6a74367e01c5d3b736dea4"
 pkgrel=1
 _pkgdesc=(
   "A collection of media manipulation scripts."
@@ -63,7 +63,7 @@ _tarname="${pkgname}-${_tag}"
     _sum='b245547bdcdbfeb09f400305a4b515b6d49635be90f560a39302761fc2688571'
   elif [[ "${_tag_name}" == "commit" ]]; then
     _tar="${_tarname}.zip::${_url}/archive/${_commit}.zip"
-    _sum="6a143f8db86343dfdbac33b94a7c43f8039257842c7d9ea84878d9918ce6c99b"
+    _sum="4768d429d74fe682e1025f088f05077638f2e27e1f79724c519ccf335ee97cf3"
   fi && \
     source+=(
       "${_tar}"
