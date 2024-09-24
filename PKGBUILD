@@ -6,8 +6,8 @@
 _offline="false"
 _git="false"
 pkgname=media-tools
-pkgver=0.0.0.1.1.1.1.1.1.1
-_commit="ca0f85149ef6e2dfe52508b977a880aa8eb793d0"
+pkgver=0.0.0.1.1.1.1.1.1.1.1
+_commit="3eca3d491b917a8bcb571d8e1dcb495db5dfc95e"
 pkgrel=1
 _pkgdesc=(
   "A collection of media manipulation scripts."
@@ -23,6 +23,7 @@ license=(
   AGPL3
 )
 depends=(
+  "coreutils"
   "caca-utils"
   "ffmpeg"
   "libcrash-bash"
@@ -67,7 +68,7 @@ _tarname="${pkgname}-${_tag}"
     _sum='b245547bdcdbfeb09f400305a4b515b6d49635be90f560a39302761fc2688571'
   elif [[ "${_tag_name}" == "commit" ]]; then
     _tar="${_tarname}.zip::${_url}/archive/${_commit}.zip"
-    _sum="d2c5092b1071b4eea778f623e3176d3a2ae8ffcd77b351b6cf335e2912068c8d"
+    _sum="29c75e8df3074e88e70fa5b355543b7898a8183fdc3d0eda6ca07f43fb280646:"
   fi && \
     source+=(
       "${_tar}"

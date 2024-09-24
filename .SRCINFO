@@ -1,16 +1,1 @@
-pkgbase = media-tools
-	pkgdesc = A collection of media manipulation scripts.
-	pkgver = 0.0.0.1.1.1.1.1.1.1
-	pkgrel = 1
-	url = https://github.com/themartiancompany/media-tools
-	arch = any
-	license = AGPL3
-	checkdepends = shellcheck
-	depends = caca-utils
-	depends = ffmpeg
-	depends = libcrash-bash
-	provides = pic2txt=0.0.0.1.1.1.1.1.1.1
-	source = media-tools-ca0f85149ef6e2dfe52508b977a880aa8eb793d0.zip::https://github.com/themartiancompany/media-tools/archive/ca0f85149ef6e2dfe52508b977a880aa8eb793d0.zip
-	sha256sums = d2c5092b1071b4eea778f623e3176d3a2ae8ffcd77b351b6cf335e2912068c8d
 
-pkgname = media-tools
