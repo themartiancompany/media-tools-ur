@@ -6,8 +6,8 @@
 _offline="false"
 _git="false"
 pkgname=media-tools
-pkgver=0.0.0.1.1.1.1.1.1.1
-_commit="ca0f85149ef6e2dfe52508b977a880aa8eb793d0"
+pkgver=0.0.0.1.1.1.1.1.1.1.1.1
+_commit="ccb4360a85f38742fc0bf01c41cb8328d79b64c9"
 pkgrel=1
 _pkgdesc=(
   "A collection of media manipulation scripts."
@@ -24,6 +24,7 @@ license=(
 )
 depends=(
   "caca-utils"
+  "encoding-tools"
   "ffmpeg"
   "libcrash-bash"
 )
