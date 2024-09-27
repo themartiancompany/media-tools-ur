@@ -23,6 +23,7 @@ license=(
   AGPL3
 )
 depends=(
+  "bc"
   "caca-utils"
   "encoding-tools"
   "ffmpeg"

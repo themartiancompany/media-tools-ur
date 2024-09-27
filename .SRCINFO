@@ -6,6 +6,7 @@ pkgbase = media-tools
 	arch = any
 	license = AGPL3
 	checkdepends = shellcheck
+	depends = bc
 	depends = caca-utils
 	depends = encoding-tools
 	depends = ffmpeg
