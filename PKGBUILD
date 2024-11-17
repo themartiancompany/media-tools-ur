@@ -23,6 +23,7 @@ license=(
   AGPL3
 )
 depends=(
+  "ascii-utils"
   "bc"
   "caca-utils"
   "encoding-tools"
