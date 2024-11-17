@@ -6,8 +6,8 @@
 _offline="false"
 _git="false"
 pkgname=media-tools
-pkgver=0.0.0.1.1.1.1.1.1.1.1
-_commit="3eca3d491b917a8bcb571d8e1dcb495db5dfc95e"
+pkgver=0.0.1.1.1
+_commit="2f61922adf3620402269debc3cb6848a7b88fa6b"
 pkgrel=1
 _pkgdesc=(
   "A collection of media manipulation scripts."
@@ -23,8 +23,10 @@ license=(
   AGPL3
 )
 depends=(
-  "coreutils"
+  "ascii-utils"
+  "bc"
   "caca-utils"
+  "encoding-tools"
   "ffmpeg"
   "libcrash-bash"
 )
@@ -68,7 +70,7 @@ _tarname="${pkgname}-${_tag}"
     _sum='b245547bdcdbfeb09f400305a4b515b6d49635be90f560a39302761fc2688571'
   elif [[ "${_tag_name}" == "commit" ]]; then
     _tar="${_tarname}.zip::${_url}/archive/${_commit}.zip"
-    _sum="29c75e8df3074e88e70fa5b355543b7898a8183fdc3d0eda6ca07f43fb280646:"
+    _sum='54ab2b2d052278cd3415927d12ab012870ff1f98609007a109e989d25b9f7488'
   fi && \
     source+=(
       "${_tar}"
@@ -95,3 +97,4 @@ package() {
 }
 
 # vim: ft=sh syn=sh et
+sha256sums=()
